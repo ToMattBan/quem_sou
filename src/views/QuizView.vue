@@ -9,8 +9,10 @@
       </div>
 
       <div class="_df _jcse">
-        <button class="_c-btn _c-btn--confirm _c-btn--large" @click="clickPositive">SIM</button>
-        <button class="_c-btn _c-btn--deny _c-btn--large" @click="clickNegative">NÃO</button>
+        <button class="_c-btn _c-btn--confirm _c-btn--large"
+          @click="clickPositive">{{ generalTexts[userLanguage].yes }}</button>
+        <button class="_c-btn _c-btn--deny _c-btn--large"
+          @click="clickNegative">{{ generalTexts[userLanguage].no }}</button>
       </div>
     </div>
 
@@ -23,12 +25,11 @@
 </template>
 
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-import quizes from '@/Quizes/_main';
-import quizesTexts from '@/localization/Quizes/_quizes';
-import { userLanguage } from '@/localization/main';
-import type { IQuiz } from "@/interfaces/IQuizes";
 import { ref, type Ref } from 'vue';
+import { useRoute } from 'vue-router';
+import type { IQuiz } from "@/interfaces/IQuizes";
+import { userLanguage, generalTexts, quizesTexts } from '@/localization/main';
+import quizes from '@/Quizes/_main';
 
 const route = useRoute();
 const quizName = route.params.name;

@@ -1,4 +1,6 @@
-import Home from './Home/_home';
+import generalTexts from './General/_general';
+import homeTexts from './Home/_home';
+import quizesTexts from './Quizes/_quizes';
 
 function getUserLanguage() {
   const browserLanguage: string = navigator.language;
@@ -17,4 +19,4 @@ function getUserLanguage() {
 const availableLanguages: string[] = ["BR", "EN"];
 const userLanguage: string = getUserLanguage();
 
-export { userLanguage, Home };
+export { userLanguage, generalTexts, homeTexts, quizesTexts };

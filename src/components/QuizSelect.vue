@@ -14,10 +14,9 @@
 
 <script setup lang="ts">
 import type { IHome } from "@/interfaces/IHome"
-import { userLanguage, Home } from '@/localization/main';
-import quizesTexts from '@/localization/Quizes/_quizes';
-import QuizBox from './QuizBox.vue';
+import { userLanguage, homeTexts, quizesTexts } from '@/localization/main';
 import quizes from '@/Quizes/_main'
+import QuizBox from './QuizBox.vue';
 
-const texts: IHome = Home[userLanguage];
+const texts: IHome = homeTexts[userLanguage];
 </script>
