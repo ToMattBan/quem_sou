@@ -8,7 +8,7 @@
     "test": "vitest --environment jsdom",
     "deploy": "run-p build && run-p commitDist",
 
-    "commitDist": "git add dist -f && git commit -m '--> Deploy to prod' && git subtree push --prefix dist origin gh-pages",
+    "commitDist": "git add dist -f && git commit -m '--> Deploy to prod' && git subtree push --prefix dist origin gh-pages && git push",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false"
   },
