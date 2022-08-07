@@ -102,7 +102,7 @@ const questions: IQuestions[] = [
   },
 ]
 
-const resultsCovers = {
+const resultsCovers: { [key: string]: string } = {
   "R1": R1,
   "R2": R2,
   "R3": R3,

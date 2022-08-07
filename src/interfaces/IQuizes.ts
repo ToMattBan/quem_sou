@@ -4,13 +4,24 @@ export interface IOptionQuizes {
 }
 
 export interface IQuestions {
-  positiveAwnser: number | string
+  positiveAwnser: number | string,
   negativeAwnser: number | string
+}
+
+export interface ITextResults {
+  title: string,
+  desc: string
 }
 
 export interface IQuiz {
   title: string,
   cover: string,
   questions: IQuestions[],
-  resultsCovers: {},
+  resultsCovers: { [key: string]: string }
+}
+
+export interface ITextQuiz {
+  title: string,
+  questions: string[],
+  results: { [key: string]: ITextResults }
 }

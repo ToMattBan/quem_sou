@@ -1,5 +1,4 @@
 import Home from './Home/_home';
-import Quizes from './Quizes/_quizes';
 
 function getUserLanguage() {
   const browserLanguage: string = navigator.language;

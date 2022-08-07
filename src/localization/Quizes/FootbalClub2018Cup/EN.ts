@@ -1,6 +1,6 @@
-import type { IOptionQuizes } from "@/interfaces/IQuizes";
+import type { ITextResults } from "@/interfaces/IQuizes";
 
-const title = "Qual Seleção da Copa é a Sua Cara?"
+const title: string = "Qual Seleção da Copa é a Sua Cara?"
 
 const questions: string[] = [
   'Você é uma pessoa popular?',
@@ -27,35 +27,35 @@ const questions: string[] = [
   'Pergunta 21',
 ];
 
-const results = {
+const results: { [key: string]: ITextResults } = {
   "R1": {
     title: 'Argentina',
-    desc: 'A campanha ruim',
+    desc: 'A campanha ruim nas eliminatórias quase custou a vaga. Precisa provar que tem mais do que só o talento de Messi.',
   },
-  "R2" :{
+  "R2": {
     title: 'Brasil',
-    desc: 'Chaga como um',
+    desc: 'Chega como um dos favoritos reais após anos. Tem craques e um time unido. Além disso, é a promessa de memes e zoeira.',
   },
   "R3": {
     title: 'Alemanha',
-    desc: 'Talvez a maior',
+    desc: 'Talvez a maior favorita, ganhou a Copa das Confederações em 2017. Tem um time sério, ágil e eficiente.',
   },
   "R4": {
     title: 'Rússia',
-    desc: 'Segura a vodca!',
+    desc: 'Segura a vodca! A anfitriã só venceu três partidas em 2017. Vai jogar para não pagar o mico de cair na primeira fase.',
   },
   "R5": {
     title: 'Egito',
-    desc: 'Aqui tem craque!',
+    desc: 'Aqui tem craque! O atacante muçulmano Mohamed Salah é tão carismático que tem diminuído o preconceito religioso.',
   },
   "R6": {
     title: 'Islândia',
-    desc: 'Mascote do torneio',
+    desc: 'Mascote do torneio, ganhou a simpatia do mundo na Eurocopa. não tem tradição, mas vai ser o Davi contra os Golias.',
   },
 }
 
-export default { 
+export default {
   "title": title,
-  "questions": questions, 
+  "questions": questions,
   "results": results,
 };

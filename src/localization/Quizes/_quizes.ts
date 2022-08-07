@@ -1,4 +1,3 @@
-import type { IQuiz } from "../../interfaces/IQuizes";
 import footbalClub2018CupTexts from "./FootbalClub2018Cup/_footbalClub2018Cup";
 
 const quizesTexts: { [key: string]: any } = {
