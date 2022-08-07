@@ -8,10 +8,10 @@
         <span>{{ actualQuizTexts.questions[_questionNumber] }}</span>
       </div>
 
-      <div class="_df _jcse">
-        <button class="_c-btn _c-btn--confirm _c-btn--large"
+      <div class="_df _jcse _fxww">
+        <button class="_c-btn _c-btn--large _mvxxs _c-btn--confirm"
           @click="clickPositive">{{ generalTexts[userLanguage].yes }}</button>
-        <button class="_c-btn _c-btn--deny _c-btn--large"
+        <button class="_c-btn _c-btn--large _mvxxs _c-btn--deny"
           @click="clickNegative">{{ generalTexts[userLanguage].no }}</button>
       </div>
     </div>

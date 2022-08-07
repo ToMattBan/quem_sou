@@ -1,5 +1,5 @@
 <template>
-  <div class="o-layout__item _6/12 _tac quizBox">
+  <div class="o-layout__item _1/1 _6/12@tabletV _4/12@tabletH _3/12@laptop _tac quizBox">
     <RouterLink class="_tdn _realBlack" :to="props.link">
       <img class="_cp _1/1 cover" :src="props.cover">
       <p class="_mt0 _cp _tdn">{{ props.title }}</p>
