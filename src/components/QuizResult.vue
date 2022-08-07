@@ -1,7 +1,7 @@
 <template>
   <div class="_1/1">
     <img class="resultImage" :src="resultImage" />
-    <div class="_fz30">{{ resultTitle }}</div>
+    <div class="_fz30 _ttc">{{ resultTitle }}</div>
     <p>{{ resultDesc }}</p>
   </div>
 </template>

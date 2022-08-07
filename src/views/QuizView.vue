@@ -4,7 +4,6 @@
 
     <div class="_1/1 _df _fxdc _jcsb" v-if="!quizeEnded">
       <div class="_fz24">
-        <span>{{ _questionNumber + 1 }}. </span>
         <span>{{ actualQuizTexts.questions[_questionNumber] }}</span>
       </div>
 
