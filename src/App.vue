@@ -1,9 +1,9 @@
 <template>
   <main class="_por _df _aic _jcc" :style="bgStyle">
     <RouterLink to="/">
-      <img class="_poa _t0 _l0 _m icon" :src="icon" />
+      <img class="_poa _t0 _l0 _m icon" :src="home_icon" />
     </RouterLink>
-    <img class="_poa _t0 _r0 _m icon" :src="icon" />
+    <img class="_poa _t0 _r0 _m icon _cp" :src="language_icon" />
     <div class="_bdrs4 _bgwhite _bd2 _8/12">
       <div class="_p">
         <RouterView />
@@ -15,7 +15,8 @@
 
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import icon from '@/assets/icon.png';
+import home_icon from '@/assets/home_icon.png';
+import language_icon from '@/assets/language_icon.png';
 import backgroundImage from '@/assets/bg_quiz.jpeg';
 
 const bgStyle = {
