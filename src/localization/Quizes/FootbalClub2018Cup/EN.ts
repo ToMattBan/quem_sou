@@ -1,6 +1,6 @@
 import type { ITextResults } from "@/interfaces/IQuizes";
 
-const title: string = "Qual Seleção da Copa é a Sua Cara?"
+const title: string = "Wich 2018 World Cup footbal team are you?"
 
 const questions: string[] = [
   "Are you a popular person?",
