@@ -9,18 +9,20 @@
       </div>
 
       <div class="_df _jcse _fxww">
-        <button class="_c-btn _c-btn--large _mvxxs _c-btn--confirm"
-          @click="clickPositive">{{ generalTexts[userLanguage].yes }}</button>
-        <button class="_c-btn _c-btn--large _mvxxs _c-btn--deny"
-          @click="clickNegative">{{ generalTexts[userLanguage].no }}</button>
+        <button class="_c-btn _c-btn--large _mvxxs _c-btn--confirm" @click="clickPositive">
+          {{ generalTexts[userLanguage].yes }}
+        </button>
+        <button class="_c-btn _c-btn--large _mvxxs _c-btn--deny" @click="clickNegative">
+          {{ generalTexts[userLanguage].no }}
+        </button>
       </div>
     </div>
 
-    <div class="_1/1" v-else="">
-      <div class="_fz24">{{ actualQuizTexts.results[resultQuiz].title }}</div>
-      <img class="resultImage" :src="actualQuiz.resultsCovers[resultQuiz]" />
-      <div>{{ actualQuizTexts.results[resultQuiz].desc }}</div>
-    </div>
+    <QuizResult v-else=""
+      :resultTitle="actualQuizTexts.results[resultQuiz].title"
+      :resultImage="actualQuiz.resultsCovers[resultQuiz]" 
+      :resultDesc="actualQuizTexts.results[resultQuiz].desc"
+    />
   </div>
 </template>
 
@@ -30,6 +32,7 @@ import { useRoute } from 'vue-router';
 import type { IQuiz } from "@/interfaces/IQuizes";
 import { userLanguage, generalTexts, quizesTexts } from '@/localization/main';
 import quizes from '@/Quizes/_main';
+import QuizResult from '../components/QuizResult.vue';
 
 const route = useRoute();
 const quizName = route.params.name;
@@ -74,9 +77,5 @@ function showResult(result: string) {
 <style scoped>
 .quizFather {
   height: 100%;
-}
-
-.resultImage {
-  height: 40%;
 }
 </style>
