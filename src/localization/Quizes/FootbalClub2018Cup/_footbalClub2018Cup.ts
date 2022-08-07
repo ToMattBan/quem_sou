@@ -1,4 +1,4 @@
-import type { IQuiz } from '@/localization/interfaces/IQuizes';
+import type { IQuiz } from '@/interfaces/IQuizes';
 import BR from './BR';
 import EN from './EN';
 

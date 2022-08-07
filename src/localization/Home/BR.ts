@@ -1,4 +1,4 @@
-import type { IHome } from "../interfaces/IHome";
+import type { IHome } from "../../interfaces/IHome";
 
 const textsHomeBr: IHome = {
   "selectQuiz": "Selecione seu quiz",

@@ -5,12 +5,13 @@ import R3 from "@/assets/quizes/footbalClub2018Cup/R3.jpeg";
 import R4 from "@/assets/quizes/footbalClub2018Cup/R4.jpeg";
 import R5 from "@/assets/quizes/footbalClub2018Cup/R5.jpeg";
 import R6 from "@/assets/quizes/footbalClub2018Cup/R6.jpeg";
+import type { IQuestions, IQuiz } from "@/interfaces/IQuizes";
 
 const title = "footbalClub2018Cup";
 
 const cover = footbalClub2018CupCover;
 
-const questions = [
+const questions: IQuestions[] = [
   {
     positiveAwnser: 3,
     negativeAwnser: 1,
@@ -110,7 +111,7 @@ const resultsCovers = {
   "R6": R6
 }
 
-const footbalClub2018Cup = {
+const footbalClub2018Cup: IQuiz = {
   title,
   cover,
   questions,

@@ -1,4 +1,4 @@
-import type { IOptionQuizes } from "@/localization/interfaces/IQuizes";
+import type { IOptionQuizes } from "@/interfaces/IQuizes";
 
 const title = "Qual Seleção da Copa é a Sua Cara?"
 
@@ -27,32 +27,32 @@ const questions: string[] = [
   'Pergunta 21',
 ];
 
-const results: IOptionQuizes[] = [
-  {
+const results = {
+  "R1": {
     title: 'Argentina',
     desc: 'A campanha ruim',
   },
-  {
+  "R2" :{
     title: 'Brasil',
     desc: 'Chaga como um',
   },
-  {
+  "R3": {
     title: 'Alemanha',
     desc: 'Talvez a maior',
   },
-  {
+  "R4": {
     title: 'Rússia',
     desc: 'Segura a vodca!',
   },
-  {
+  "R5": {
     title: 'Egito',
     desc: 'Aqui tem craque!',
   },
-  {
+  "R6": {
     title: 'Islândia',
     desc: 'Mascote do torneio',
   },
-]
+}
 
 export default { 
   "title": title,

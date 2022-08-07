@@ -1,4 +1,4 @@
-import type { IHome } from '../interfaces/IHome';
+import type { IHome } from '../../interfaces/IHome';
 import BR from './BR';
 import EN from './EN';
 
