@@ -1,8 +1,8 @@
 import type { IOptionQuizes } from "@/localization/interfaces/IQuizes";
 
-const quizTitle = "Qual Seleção da Copa é a Sua Cara?"
+const title = "Qual Seleção da Copa é a Sua Cara?"
 
-const questionsFootbalClub2018CupBr: string[] = [
+const questions: string[] = [
   'Você é uma pessoa popular?',
   'Em um jogo de "transar, casar ou matar" com Frank Ribery, Ronaldinho Gaúcho e o Chewbacca, você transa com o Chewbacca?',
   'Pergunta 2',
@@ -27,7 +27,7 @@ const questionsFootbalClub2018CupBr: string[] = [
   'Pergunta 21',
 ];
 
-const resultsFootbalClub2018CupBr: IOptionQuizes[] = [
+const results: IOptionQuizes[] = [
   {
     title: 'Argentina',
     desc: 'A campanha ruim',
@@ -55,7 +55,7 @@ const resultsFootbalClub2018CupBr: IOptionQuizes[] = [
 ]
 
 export default { 
-  "quizTitle": quizTitle,
-  "questionsFootbalClub2018CupBr": questionsFootbalClub2018CupBr, 
-  "resultsFootbalClub2018CupBr": resultsFootbalClub2018CupBr,
+  "title": title,
+  "questions": questions, 
+  "results": results,
 };

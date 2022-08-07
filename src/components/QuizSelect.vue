@@ -2,10 +2,10 @@
   <div>
     <div class="_tac _fw7 _fz30 _mbsm">{{ texts.selectQuiz }}</div>
     <div class="_o-layout">
-      <QuizBox 
+      <QuizBox
         v-for="quiz in quizes"
         :cover="quiz.cover"
-        :title="quiz.title"
+        :title="quizesTexts[quiz.title][userLanguage].title"
       />
     </div>
   </div>
@@ -14,6 +14,7 @@
 <script setup lang="ts">
 import type { IHome } from "@/localization/interfaces/IHome"
 import { userLanguage, Home } from '@/localization/main';
+import quizesTexts from '@/localization/Quizes/_quizes';
 import QuizBox from './QuizBox.vue';
 import quizes from '@/Quizes/_main'
 
