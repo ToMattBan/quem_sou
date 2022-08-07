@@ -33,23 +33,23 @@ const results: { [key: string]: ITextResults } = {
     desc: "The bad campaign in the playoffs almost cost the spot. You need to prove that you have more than just Messi's talent.",
   },
   "R2": {
-    title: "Brasil",
+    title: "Brazil",
     desc: "It arrives as one of the royal favorites after years. It has stars and a united team. Plus, it's the promise of memes and banter.",
   },
   "R3": {
-    title: "Alemanha",
+    title: "Germany",
     desc: "Perhaps the biggest favourite, it won the Confederations Cup in 2017. It has a serious, agile and efficient team.",
   },
   "R4": {
-    title: "Rússia",
+    title: "Russia",
     desc: "Hold the vodka! The hostess only won three matches in 2017. She's going to play so she doesn't have to fall in the first phase.",
   },
   "R5": {
-    title: "Egito",
+    title: "Egypt",
     desc: "Here's a crack! Muslim striker Mohamed Salah is so charismatic that he has lessened religious prejudice.",
   },
   "R6": {
-    title: "Islândia",
+    title: "Iceland",
     desc: "Tournament mascot, won the sympathy of the world at Eurocup. it has no tradition, but it will be David against Goliath.",
   },
 }
