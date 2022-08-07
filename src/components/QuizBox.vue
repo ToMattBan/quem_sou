@@ -1,8 +1,8 @@
 <template>
-  <div class="o-layout__item _6/12 _tac">
-    <RouterLink :to="props.link">
+  <div class="o-layout__item _6/12 _tac quizBox">
+    <RouterLink class="_tdn _realBlack" :to="props.link">
       <img class="_cp _1/1 cover" :src="props.cover">
-      <p class="_mt0 _cp">{{ props.title }}</p>
+      <p class="_mt0 _cp _tdn">{{ props.title }}</p>
     </RouterLink>
   </div>
 </template>
@@ -16,9 +16,18 @@ const props = defineProps({
 })
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .cover {
   object-fit: cover;
   height: 100px;
+}
+
+.quizBox {
+  transition: all 0.4s ease;
+
+  &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+  }
 }
 </style>
