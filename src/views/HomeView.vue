@@ -3,5 +3,5 @@
 </template>
 
 <script setup lang="ts">
-import QuizSelect from "../components/QuizSelect.vue";
+import QuizSelect from "@/components/QuizSelect.vue";
 </script>
