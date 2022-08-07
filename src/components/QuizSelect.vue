@@ -6,6 +6,7 @@
         v-for="quiz in quizes"
         :cover="quiz.cover"
         :title="quizesTexts[quiz.title][userLanguage].title"
+        :link="`/quiz/${quiz.title}`"
       />
     </div>
   </div>

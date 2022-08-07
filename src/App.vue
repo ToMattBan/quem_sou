@@ -2,7 +2,7 @@
   <main class="_df _aic _jcc" :style="bgStyle">
     <div class="_bdrs4 _bgwhite _bd2 _8/12">
       <div class="_p">
-<!--         <RouterLink to="/">Home</RouterLink>
+        <!-- <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink> -->
         <RouterView />
       </div>

@@ -1,7 +1,9 @@
 <template>
   <div class="o-layout__item _6/12 _tac">
-    <img class="_cp cover" :src="props.cover">
-    <p class="_mt0 _cp">{{ props.title }}</p>
+    <RouterLink :to="props.link">
+      <img class="_cp _1/1 cover" :src="props.cover">
+      <p class="_mt0 _cp">{{ props.title }}</p>
+    </RouterLink>
   </div>
 </template>
 
@@ -10,6 +12,7 @@
 const props = defineProps({
   cover: { type: String, required: true },
   title: { type: String, required: true },
+  link: { type: String, required: true }
 })
 </script>
 
