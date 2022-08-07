@@ -5,7 +5,7 @@
     </RouterLink>
     <img class="_poa _t0 _r0 _m icon _cp" :src="language_icon" />
     <div class="_bdrs4 _bgwhite _bd2 _8/12">
-      <div class="_p">
+      <div class="_m _por frame">
         <RouterView />
       </div>
     </div>
@@ -37,5 +37,9 @@ main>div {
 
 .icon {
   height: 60px;
+}
+
+.frame {
+  height: calc(100% - 64px);
 }
 </style>
