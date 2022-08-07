@@ -18,87 +18,87 @@ const questions: IQuestions[] = [
   },
   {
     positiveAwnser: 6,
-    negativeAwnser: 4
+    negativeAwnser: 4,
   },
   {
     positiveAwnser: 20,
-    negativeAwnser: 7
+    negativeAwnser: 7,
   },
   {
     positiveAwnser: 2,
-    negativeAwnser: 9
+    negativeAwnser: 9,
+  },
+  {
+    positiveAwnser: 12,
+    negativeAwnser: 5,
   },
   {
     positiveAwnser: 11,
-    negativeAwnser: 5
-  },
-  {
-    positiveAwnser: 10,
-    negativeAwnser: 17
-  },
-  {
-    positiveAwnser: 13,
-    negativeAwnser: 14
-  },
-  {
-    positiveAwnser: 6,
-    negativeAwnser: 8
+    negativeAwnser: 10,
   },
   {
     positiveAwnser: 14,
-    negativeAwnser: 12
+    negativeAwnser: 15,
+  },
+  {
+    positiveAwnser: 6,
+    negativeAwnser: 8,
   },
   {
     positiveAwnser: 15,
-    negativeAwnser: 2
+    negativeAwnser: 13,
   },
   {
-    positiveAwnser: 17,
-    negativeAwnser: 19
-  },
-  {
-    positiveAwnser: "R2",
-    negativeAwnser: 18
-  },
-  {
-    positiveAwnser: "R6",
-    negativeAwnser: "R1"
-  },
-  {
-    positiveAwnser: "R2",
-    negativeAwnser: "R4"
-  },
-  {
-    positiveAwnser: 18,
-    negativeAwnser: 12
+    positiveAwnser: 10,
+    negativeAwnser: 2,
   },
   {
     positiveAwnser: 16,
-    negativeAwnser: 14
+    negativeAwnser: 15,
   },
   {
-    positiveAwnser: 21,
-    negativeAwnser: "R3"
+    positiveAwnser: 17,
+    negativeAwnser: 19,
   },
   {
     positiveAwnser: "R2",
-    negativeAwnser: "R1"
-  },
-  {
-    positiveAwnser: "R4",
-    negativeAwnser: "R2"
-  },
-  {
-    positiveAwnser: "R4",
-    negativeAwnser: 21
-  },
-  {
-    positiveAwnser: "R3",
-    negativeAwnser: "R5"
+    negativeAwnser: 20,
   },
   {
     positiveAwnser: "R6",
-    negativeAwnser: "R5"
+    negativeAwnser: "R1",
+  },
+  {
+    positiveAwnser: "R2",
+    negativeAwnser: "R4",
+  },
+  {
+    positiveAwnser: 18,
+    negativeAwnser: 13,
+  },
+  {
+    positiveAwnser: 21,
+    negativeAwnser: "R3",
+  },
+  {
+    positiveAwnser: "R2",
+    negativeAwnser: "R1",
+  },
+  {
+    positiveAwnser: "R4",
+    negativeAwnser: "R2",
+  },
+  {
+    positiveAwnser: "R4",
+    negativeAwnser: 21,
+  },
+  {
+    positiveAwnser: "R3",
+    negativeAwnser: "R5",
+  },
+  {
+    positiveAwnser: "R6",
+    negativeAwnser: "R5",
   },
 ]
 

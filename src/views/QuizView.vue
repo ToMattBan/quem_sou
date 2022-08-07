@@ -4,8 +4,8 @@
 
     <div class="_1/1 _df _fxdc _jcsb" v-if="!quizeEnded">
       <div class="_fz24">
-        <span>{{ questionNumber + 1 }}. </span>
-        <span>{{ actualQuizTexts.questions[questionNumber] }}</span>
+        <span>{{ _questionNumber + 1 }}. </span>
+        <span>{{ actualQuizTexts.questions[_questionNumber] }}</span>
       </div>
 
       <div class="_df _jcse">
@@ -34,7 +34,7 @@ const route = useRoute();
 const quizName = route.params.name;
 
 const actualQuiz: Ref<IQuiz> = ref({ title: '', cover: '', questions: [], resultsCovers: {} });
-const questionNumber: Ref<number> = ref(0);
+const _questionNumber: Ref<number> = ref(0);
 const quizeEnded: Ref<boolean> = ref(false);
 const resultQuiz: Ref<string> = ref('');
 
@@ -46,9 +46,9 @@ const quizTitle = actualQuizTexts.title;
 
 function clickPositive() {
   if (actualQuiz) {
-    const nextQuestion = actualQuiz.value.questions[questionNumber.value].positiveAwnser;
+    const nextQuestion = actualQuiz.value.questions[_questionNumber.value].positiveAwnser;
     if (typeof nextQuestion == 'number')
-      questionNumber.value = nextQuestion;
+      _questionNumber.value = nextQuestion;
     else
       showResult(nextQuestion);
   }
@@ -56,9 +56,9 @@ function clickPositive() {
 
 function clickNegative() {
   if (actualQuiz) {
-    const nextQuestion = actualQuiz.value.questions[questionNumber.value].negativeAwnser;
+    const nextQuestion = actualQuiz.value.questions[_questionNumber.value].negativeAwnser;
     if (typeof nextQuestion == 'number')
-      questionNumber.value = nextQuestion;
+      _questionNumber.value = nextQuestion;
     else
       showResult(nextQuestion);
   }
