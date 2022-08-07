@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import type { IHome } from "@/localization/interfaces/IHome"
+import type { IHome } from "@/interfaces/IHome"
 import { userLanguage, Home } from '@/localization/main';
 import quizesTexts from '@/localization/Quizes/_quizes';
 import QuizBox from './QuizBox.vue';
