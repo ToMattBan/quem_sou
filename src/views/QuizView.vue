@@ -1,10 +1,10 @@
 <template>
   <div class="_tac _df quizFather _fxww">
-    <div class="_fw7 _fz30 _mbsm _1/1">{{ quizTitle }}</div>
+    <div class="_fw7 _fz30 _mbsm _1/1">{{ quizesTexts[quizName as string][userLanguage].title }}</div>
 
     <div class="_1/1 _df _fxdc _jcsb" v-if="!quizeEnded">
       <div class="_fz24">
-        <span>{{ actualQuizTexts.questions[_questionNumber] }}</span>
+        <span>{{ quizesTexts[quizName as string][userLanguage].questions[questionNumber] }}</span>
       </div>
 
       <div class="_df _jcse _fxww">
@@ -18,9 +18,9 @@
     </div>
 
     <QuizResult v-else=""
-      :resultTitle="actualQuizTexts.results[resultQuiz].title"
+      :resultTitle="quizesTexts[quizName as string][userLanguage].results[resultQuiz].title"
       :resultImage="actualQuiz.resultsCovers[resultQuiz]" 
-      :resultDesc="actualQuizTexts.results[resultQuiz].desc"
+      :resultDesc="quizesTexts[quizName as string][userLanguage].results[resultQuiz].desc"
     />
   </div>
 </template>
@@ -37,21 +37,18 @@ const route = useRoute();
 const quizName = route.params.name;
 
 const actualQuiz: Ref<IQuiz> = ref({ title: '', cover: '', questions: [], resultsCovers: {} });
-const _questionNumber: Ref<number> = ref(0);
+const questionNumber: Ref<number> = ref(0);
 const quizeEnded: Ref<boolean> = ref(false);
 const resultQuiz: Ref<string> = ref('');
 
 const findQuiz = quizes.find(quiz => quiz.title == quizName)
 if (findQuiz) actualQuiz.value = findQuiz;
-const actualQuizTexts = quizesTexts[quizName as string][userLanguage]
-const quizTitle = actualQuizTexts.title;
-
 
 function clickPositive() {
   if (actualQuiz) {
-    const nextQuestion = actualQuiz.value.questions[_questionNumber.value].positiveAwnser;
+    const nextQuestion = actualQuiz.value.questions[questionNumber.value].positiveAwnser;
     if (typeof nextQuestion == 'number')
-      _questionNumber.value = nextQuestion;
+      questionNumber.value = nextQuestion;
     else
       showResult(nextQuestion);
   }
@@ -59,9 +56,9 @@ function clickPositive() {
 
 function clickNegative() {
   if (actualQuiz) {
-    const nextQuestion = actualQuiz.value.questions[_questionNumber.value].negativeAwnser;
+    const nextQuestion = actualQuiz.value.questions[questionNumber.value].negativeAwnser;
     if (typeof nextQuestion == 'number')
-      _questionNumber.value = nextQuestion;
+      questionNumber.value = nextQuestion;
     else
       showResult(nextQuestion);
   }

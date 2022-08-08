@@ -1,6 +1,9 @@
+import { type Ref, ref } from 'vue';
 import generalTexts from './General/_general';
 import homeTexts from './Home/_home';
 import quizesTexts from './Quizes/_quizes';
+
+const userLanguage: Ref<string> = ref('EN');
 
 function getUserLanguage() {
   const browserLanguage: string = navigator.language;
@@ -10,13 +13,15 @@ function getUserLanguage() {
 
   if (splitLanguage.length > 1 && availableLanguages.includes(splitLanguage[1]))
     return splitLanguage[1]
-  else if (availableLanguages.includes(splitLanguage[0]))
+  else (availableLanguages.includes(splitLanguage[0]))
     return splitLanguage[0]
-  else
-    return "EN";
+}
+
+function changeLanguage(newLanguage: string) {
+  userLanguage.value = newLanguage;
 }
 
 const availableLanguages: string[] = ["BR", "EN"];
-const userLanguage: string = getUserLanguage();
+userLanguage.value = getUserLanguage();
 
-export { userLanguage, generalTexts, homeTexts, quizesTexts };
+export { userLanguage, changeLanguage, generalTexts, homeTexts, quizesTexts };
