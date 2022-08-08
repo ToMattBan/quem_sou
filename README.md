@@ -9,3 +9,6 @@ Project made using Vue3 and TypeScript. The goal was test some new things that I
 Spend a whole weekend on it haha
 
 I get all the quizes from a old brazilian maganize called "Mundo Estranho", which have some quizes like these once in a while.
+
+#
+Ps.: All the English texts were made using the google translator, so is probable that some errors exist.
